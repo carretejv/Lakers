@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: hsl(0, 18%, 97%);
+}
+
+/* mexendo nos links*/
+.itens a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.1s;
+    padding: 10px 10px;
+}
+
+.itens a:hover {
+    color: #f4d35f;
+    transition: 0.5s;
+}
+
+/*barra de navegação */
+.logo {
+    background: url(carrossel/lakers.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #3b1d58;
+    height: 8vh;
+    position: fixed;
+    z-index: 9999;
+    transition: top 0.3s;
+    width: 100%;
+}
+
+.itens {
+    list-style: none;
+    display: flex;
+}
+
+.itens li {
+    letter-spacing: 1px;
+    margin-left: 12px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    margin-bottom: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+    position: relative;
+    color: #fff;
+}
+
+.navbar ul li::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 90%;
+    left: 0;
+    background-color: #f4d35f;
+    transition: transform .6s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.navbar ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+/*mexendo nas sections*/
+
+/*slider/ carrossel*/
+section.slider {
+    margin-top: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input,
+.img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 44%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 1px solid #3b1d58;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #3b1d58;
+    transition: 0.2s;
+}
+
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: #3b1d58;
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+.texto-overlay {
+    position: absolute;
+    width: 1090px;
+    height: 70px;
+    top:450px;
+    left: 120px;
+    color: white;
+    background-color: #3b1d58;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    line-height: 70px;
+    font-size: 60px;
+    box-shadow: rgb(59, 29, 88) 10px 0px 0px 0px, rgb(59, 29, 88) -10px 0px 0px 0px;
+}
+
+.texto-overlay1 {
+    position: absolute;
+    width: 800px;
+    height: 70px;
+    top: 450px;
+    left: 252px;
+    color: white;
+    background-color: #3b1d58;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    line-height: 70px;
+    font-size: 60px;
+    box-shadow: rgb(59, 29, 88) 10px 0px 0px 0px, rgb(59, 29, 88) -10px 0px 0px 0px;
+}
+
+/* elenco section*/
+#elenco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding-top: 80px;
+}
+
+.elenco-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1360px;
+    margin-bottom: 20px;
+}
+
+.elenco {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px; 
+    max-width: 250px; 
+    text-align: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.elenco img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.elenco p {
+    font-family: "PT Sans", sans-serif;
+    padding: 5px;
+}
+.elenco .posicao {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.elenco .college {
+    color: #555;
+}
+
+.elenco .salario {
+    font-weight: bold;
+    color: green;
+}
+
+.profile-item .name,
+.profile-item .age,
+.profile-item .birthplace {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#elenco {
+    height: 127vh;
+    padding-top: 70px;
+}
+.nome-jogador{
+    font-family:"PT Sans", sans-serif ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* quarta section*/
+#sobre {
+    height: 100vh;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(carrossel/Crypto.com_Arena_interior_-_Lakers_2022.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.highlight{
+    color: #f4d35f;
+}
+
+.texto1 {
+    background-color: rgba(59, 29, 88, 0.7); /* Cor de fundo com 70% de opacidade */
+    color: #fff;
+    border: 1px solid #3b1d58;
+    border-radius: 20px;
+    padding: 2.2%;
+    width: 70%;
+    height: 40%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* estatisticas section*/
+#estatisticas{
+    height: 106vh;
+    padding-top: 70px;
+}
+.estatisticas {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+}
+.linha-estatisticas{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #cecece;
+    width: 20%;
+    text-align: center;
+    padding-top: 25px;
+    font-family: sans-serif;
+    height: 20%;
+
+}
+.posicao{
+    font-family:"Bebas Neue", sans-serif ;
+    font-size: 50px;
+    letter-spacing: normal;
+    color: #3b1d58;
+}
+.quesito{
+    font-family:"Bebas Neue", sans-serif ;
+    letter-spacing: normal;
+    font-size: 20px;
+    color: #222;
+}
+.valor{
+    font-family:"Bebas Neue", sans-serif ;
+    font-size: 50px;
+    letter-spacing: normal;
+    color: #3b1d58;
+}
+/*calendario*/
+.content-calendario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    width:auto;
+    height:100px; /* ou um valor fixo, se necessário */
+    box-sizing: border-box;
+}
+.calendario{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 212px;
+    height:auto;
+    background-color: #fff;
+    border-radius: 20px;
+    font-family:"Benas Neue", sans-serif ;
+    border: 1px solid;
+}
+.calendario-final1{
+    color:#0066cc;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    padding-left: 291.5px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.calendario-final{
+    color:#0066cc;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    padding-left: 80px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.data{
+    width: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.season{
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jogos{
+    width: 210px;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cecece;
+}
+.jogos:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #f0f0f0;
+}
+.jogos p{
+    margin-right: 4px;
+    margin-left: 4px;
+    font-size: 11px;
+    letter-spacing: normal;
+}
+.jogos img{
+    width: 27px;
+    height: 27px;
+    margin-right: 4px;
+}
+.nome-time{
+    padding-right: 40px;
+    font-size: 11px;
+    letter-spacing: normal;
+    text-align: start;
+}
+.resultado{
+    color: #dd0000;
+    margin-right: 10px;
+    font-size: 11px;
+    letter-spacing: normal;
+}
+.resultadoV{
+    color: #009944;
+    margin-right: 10px;
+    font-size: 11px;
+    letter-spacing: normal;
+}
+.pts{
+    margin-right: 10px;
+    font-size: 11px;
+    letter-spacing: normal;
+}
+.coluna{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.calendario2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: flex;
+    width: 632px;
+    height:auto;
+    background-color: #fff;
+    border-radius: 20px;
+    font-family:"Benas Neue", sans-serif ;
+    border: 1px solid !important;
+}
+.data2{
+    width: 630px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.season2{
+    width: 630px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* @media screen and (min-width:1024px) and (max-width: 1366px){
+.slider-content{
+    width: 400%;
+    height: 83vh;
+    display:flex;
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top:40%;
+    display: flex;
+    justify-content: center;
+}
+#elenco {
+    height: 100vh;
+    padding-top: 70px;
+}
+.texto1 {
+    background-color: rgba(59, 29, 88, 0.7); /* Cor de fundo com 70% de opacidade
+    color: #fff;
+    border: 1px solid #3b1d58;
+    border-radius: 20px;
+    padding: 3%;
+    width: 70%;
+    height: 40%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+.calendario {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 213px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    font-family: "Benas Neue", sans-serif;
+    border: 1px solid;
+}
+} */
+footer {
+  background-color: #3b1d58;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 5px 0;
+    color: #f4d35f;
+}
+
+footer a {
+  color: #f4d35f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

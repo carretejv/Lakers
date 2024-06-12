@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lakers</title>
+    <link rel="icon" href="carrossel/lakers.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <ul class="itens">
+                <li><a id='sexo1' href="#">INICIO</a></li>
+                <li><a href="#elenco">ELENCO</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#estatisticas">ESTATISTICAS</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="carrossel/campeoes.webp" alt="Elenco dos lakers campeão">
+                <a href="#elenco">
+                    <div class="texto-overlay1">Lembre o elenco que foi campeão da NBA</div>
+                </a>
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="carrossel/kobe.avif" alt="kobe e shaq">
+                <a href="#">
+                    <div class="texto-overlay">Confira mais sobre os antigos elencos campões da NBA</div>
+                </a>
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="carrossel/magic.webp" alt="Magic johnson">
+                <a href="#">
+                    <div class="texto-overlay">Confira mais sobre o antigo elenco campeão da NBA</div>
+                </a>
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="elenco">
+        <div class="elenco-group">
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/russel.png" alt="d'angelo russel">
+                <p class="nome-jogador">D'
+                    Russel</p>
+                <p class="posicao">Armador, 28 anos| 1.91 M | 87 kg</p>
+                <p class="college">Ohio State</p>
+                <p class="salario">$17,307,693</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/LEBRONespn.png" alt="Lebron James">
+                <p class="nome-jogador">Lebron James</p>
+                <p class="posicao">Ala, 39 anos | 2.06 m | 113 kg</p>
+                <p class="college"><br></p>
+                <p class="salario">$47,607,350</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/ADespn.png" alt="Anthony Davis">
+                <p class="nome-jogador">Anthony Davis</p>
+                <p class="posicao">Ala, 30 anos | 2,08M | 114KG</p>
+                <p class="college">Kentucky</p>
+                <p class="salario">$40,600,080</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/rui.png" alt="RUI
+                HACHIMURA">
+                <p class="nome-jogador">Rui
+                    Hachimura</p>
+                <p class="posicao">Ala-pivô, 26 anos | 2,03M | 104KG</p>
+                <p class="college">Gonzaga</p>
+                <p class="salario">$15,740,741</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/austin.png" alt="AUSTIN
+                REAVES">
+                <p class="nome-jogador">Austin
+                    Reaves</p>
+                <p class="posicao">Ala-armador, 26 anos | 1,96M | 89KG</p>
+                <p class="college">Oklahoma</p>
+                <p class="salario">$12,015,150</p>
+            </div>
+        </div>
+        <div class="elenco-group">
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/cam.png" alt="Anthony Davis">
+                <p class="nome-jogador">Cam
+                    Reddish</p>
+                <p class="posicao">Ala , 24 anos | 2,01M | 98KG</p>
+                <p class="college">Duke</p>
+                <p class="salario">$2,165,000</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/vanderbilt.png" alt="Anthony Davis">
+                <p class="nome-jogador">Jarred
+                    Vanderbilt</p>
+                <p class="posicao">Ala-pivô, 25 anos | 2,03M | 97KG</p>
+                <p class="college">Kentucky</p>
+                <p class="salario">$4.698.000</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/gabe.png" alt="GABE
+                VINCENT">
+                <p class="nome-jogador">Gabe
+                    Vincent</p>
+                <p class="posicao">Armador , 27 anos | 1,88M | 90KG</p>
+                <p class="college">Santa Barbara
+                </p>
+                <p class="salario">$10.500.000</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/WOOD.png" alt="CHRISTIAN
+                WOOD">
+                <p class="nome-jogador">Christian
+                    Wood</p>
+                <p class="posicao">Pivo, 28 anos | 2,03M | 97KG</p>
+                <p class="college">UNLV</p>
+                <p class="salario">$2.709.849</p>
+            </div>
+            <div class="elenco" onmouseover="expandCard(this)" onmouseout="collapseCard(this)">
+                <img src="elenco/prince.png" alt="TAUREAN
+                PRINCE">
+                <p class="nome-jogador">Tauren
+                    Prince</p>
+                <p class="posicao">Ala-pivô, 30 anos | 1,98M | 98KG</p>
+                <p class="college">Kentucky</p>
+                <p class="salario">$7,455,000</p>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <section id="sobre">
+        <div class="texto1">
+            <p id="texto">Los Angeles Lakers é uma equipe de basquetebol da NBA (National Basketball Association) com
+                sede em Los
+                Angeles, Califórnia. A equipe foi fundada em 1947, em Minneapolis, onde recebeu seu nome em alusão ao
+                fato do estado de Minnesota ser conhecido como "Terra dos Mil Lagos",e venceu cinco títulos da liga
+                antes de uma queda de público presente levar a uma relocação para Los Angeles em 1960. No fim dos anos
+                1970 e no começo dos anos 1980, a popularidade do Lakers cresceu, tornando-se uma das franquias de maior
+                sucesso, além de ser a com maior número de títulos, 17, empatado com o Boston Celtics. A equipe ainda
+                conta com 56 aparições na pós-temporada, 33 títulos da Divisão do Pacífico, 32 títulos da Conferência
+                Oeste e 1 título da copa da NBA.</p>
+        </div>
+
+    </section>
+    <section id="estatisticas">
+        <div class="estatisticas">
+            <div class="linha-estatisticas">
+                <span class="posicao"> 3º</span>
+                <span class="quesito">Assistências por jogo</span>
+                <span class="valor">24.4</span>
+            </div>
+            <div class="linha-estatisticas">
+                <span class="posicao"> 8º</span>
+                <span class="quesito">Pontos por jogo</span>
+                <span class="valor">106.4</span>
+            </div>
+            <div class="linha-estatisticas">
+                <span class="posicao"> 13º</span>
+                <span class="quesito">Rebotes por jogo</span>
+                <span class="valor">40.6</span>
+            </div>
+            <div class="linha-estatisticas">
+                <span class="posicao"> 11º</span>
+                <span class="quesito">Roubos de bola por jogo</span>
+                <span class="valor">6.0</span>
+            </div>
+            <div class="linha-estatisticas">
+                <span class="posicao"> 13º</span>
+                <span class="quesito">Tocos por jogo</span>
+                <span class="valor">4.0</span>
+            </div>
+            <div class="linha-estatisticas">
+                <span class="posicao"> 2º</span>
+                <span class="quesito">Faltas por jogo</span>
+                <span class="valor">16.6</span>
+            </div>
+        </div>
+        <div class="content-calendario">
+            <div class="calendario">
+                <div class="coluna">
+                    <div class="data">Calendário 2023-24</div>
+                    <div class="season">Post Season</div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">108-106</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">119-108</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">112-105</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">101-99</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">114-103</p>
+                    </div>
+                    <div class="calendario-final">Ver Mais</div>
+                </div>
+            </div>
+            <div class="calendario2">
+                <div class="coluna">
+                    <div class="data2">Calendário 2023-24</div>
+                    <div class="season2">Temporada Regular</div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Nuggets">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">119-107</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/phoenix.png" alt="Anthony Davis">
+                        <p class="nome-time">Phoenix</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">100-95</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/bucks.png" alt="Anthony Davis">
+                        <p class="nome-time">Bucks</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">132-127</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/orlando.png" alt="Anthony Davis">
+                        <p class="nome-time">Orlando</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">106-103</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Clippers</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">130-125</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/miami.png" alt="Anthony Davis">
+                        <p class="nome-time">Miami</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">108-107</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/houston.png" alt="Anthony Davis">
+                        <p class="nome-time">Houston</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">128-94</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/phoenix.png" alt="Anthony Davis">
+                        <p class="nome-time">Phoenix</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">122-119</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/PORTLAND.png" alt="Anthony Davis">
+                        <p class="nome-time">Blazer</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">116-110</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="carrossel/i.png" alt="Anthony Davis">
+                        <p class="nome-time">Nuggets</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">111-102</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/MEMPHIS.png" alt="Anthony Davis">
+                        <p class="nome-time">Grizzlies</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">134-107</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/celtics.png" alt="Anthony Davis">
+                        <p class="nome-time">Celtics</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">125-116</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/pacers.png" alt="Anthony Davis">
+                        <p class="nome-time"> Indianas </p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">131-99</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/whashington.png" alt="Anthony Davis">
+                        <p class="nome-time">Wizards</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">104-101</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/PORTLAND.png" alt="Anthony Davis">
+                        <p class="nome-time">Blazer</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">121-115</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/toronto.png" alt="Anthony Davis">
+                        <p class="nome-time">Toronto</p>
+                        <p class="resultado">D</p>
+                        <p class="pts">138-115</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/houston.png" alt="Anthony Davis">
+                        <p class="nome-time">Houston</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">133-89</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/bucks.png" alt="Anthony Davis">
+                        <p class="nome-time">Bucks</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">123-106</p>
+                    </div>
+                    <div class="calendario-final1">
+                        <p>Ver Mais</p>
+                    </div>
+                </div>
+            </div>
+            <div class="calendario">
+                <div class="coluna">
+                    <div class="data">Calendário 2023-24</div>
+                    <div class="season">In-Season</div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/pacers.png" alt="Pelicans">
+                        <p class="nome-time">Indianas</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">123-109</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/pelicans.png" alt="Anthony Davis">
+                        <p class="nome-time">Pelicans</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">133-89</p>
+                    </div>
+                    <div class="jogos">
+                        <p>x</p>
+                        <img src="elenco/phoenix.png" alt="Anthony Davis">
+                        <p class="nome-time">Phoenix</p>
+                        <p class="resultadoV">V</p>
+                        <p class="pts">106-103</p>
+                    </div>
+                    <div class="calendario-final"><a>Ver Mais</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    <footer>
+      <p>&copy; 2024 Lakers Website</p>
+      <p><a href="">Política de Privacidade</a> | <a href="">Termos de Serviço</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
